@@ -1,3 +1,4 @@
+<?php
 /**
  * Class WordPress Twitter API
  * 
