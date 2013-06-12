@@ -40,4 +40,4 @@ $result = $twitter_api->query( $query, $args );
 echo $result->followers_count;
 ```
 
-For a full list of Twitter API 1.1 resources check here: https://dev.twitter.com/docs/api/1.1
+For a full list of Twitter API 1.1 resources check here: https://dev.twitter.com/docs/api/1.1 while for testing you can take advantage of Twitter API Console here: https://dev.twitter.com/console
