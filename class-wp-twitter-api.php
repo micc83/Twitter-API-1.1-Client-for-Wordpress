@@ -16,8 +16,8 @@ class Wp_Twitter_Api {
 		),
 		
 		$query_args = array(
-			'type'					=>	'statuses/user_timeline.json',
-			'cache'					=>	1800
+			'type'				=>	'statuses/user_timeline.json',
+			'cache'				=>	1800
 		),
 
 		$has_error = false;
