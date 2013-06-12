@@ -33,7 +33,7 @@ var_dump( $twitter_api->query( $query );
 // Example b - Retrieve my follower with a cache of 24 hour (default 30 minutes)
 $query = 'screen_name=micc1983';
 $args = array(
-  'type' => 'users/show.json',
+  'type' => 'users/show',
   'cache' => ( 24 * 60 * 60 )
 );
 $result = $twitter_api->query( $query, $args );
