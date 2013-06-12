@@ -9,18 +9,18 @@ class Wp_Twitter_Api {
   
 	var $bearer_token,
 		
-		// Constructor default arguments
-		$args = array(
-			'consumer_key'			=>	'default_consumer_key',
-			'consumer_secret'		=>	'default_consumer_secret'
-		),
-		
-		$query_args = array(
-			'type'				=>	'statuses/user_timeline.json',
-			'cache'				=>	1800
-		),
+	// Constructor default arguments
+	$args = array(
+		'consumer_key'			=>	'default_consumer_key',
+		'consumer_secret'		=>	'default_consumer_secret'
+	),
+	
+	$query_args = array(
+		'type'				=>	'statuses/user_timeline.json',
+		'cache'				=>	1800
+	),
 
-		$has_error = false;
+	$has_error = false;
 	
 	/**
 	 * WordPress Twitter API Constructor
