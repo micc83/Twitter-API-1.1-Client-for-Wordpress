@@ -11,8 +11,8 @@ class Wp_Twitter_Api {
 		
 		// Constructor default arguments
 		$args = array(
-			'consumer_key'			=>	'qP78OtZPI5c7qT2cT4lA',
-			'consumer_secret'		=>	'mOa4htiQV6G0aLSf0LkS7738BX6zdrHOO2531uKUA'
+			'consumer_key'			=>	'default_consumer_key',
+			'consumer_secret'		=>	'default_consumer_secret'
 		),
 		
 		$query_args = array(
