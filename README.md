@@ -3,13 +3,13 @@ Twitter API 1.1 Client for Wordpress
 
 A simple class to query Twitter API v1.1 from WordPress with caching. 
 
-## Documentation ## 
+## Documentation
 
-As first go to https://dev.twitter.com/apps, create an application and get both *consumer_key* and *consumer_secret*.
-After that just include class-wp-twitter-api.php in your plugin or theme folder and include it.
+As first go to https://dev.twitter.com/apps, create an application and get both **consumer_key** and **consumer_secret**.
+After that just include **class-wp-twitter-api.php** in your plugin or theme folder.
 That's it, check the following example, to understand how Wp_Twitter_Api works.
 
-### Example ###
+### Example
 
 ```php
 <?php
@@ -23,7 +23,7 @@ $credentials = array(
   'consumer_secret' => 'xxxxxxxxxxxxxxxx'
 );
 
-// Let's instantiate our class with our credentials
+// Let's instantiate Wp_Twitter_Api with your credentials
 $twitter_api = new Wp_Twitter_Api( $credentials );
 
 // Example a - Retrieve last 5 tweets from my timeline (default type statuses/user_timeline.json)
