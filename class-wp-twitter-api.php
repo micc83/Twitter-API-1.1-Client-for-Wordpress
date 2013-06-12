@@ -16,7 +16,7 @@ class Wp_Twitter_Api {
 	),
 	
 	$query_args = array(
-		'type'				=>	'statuses/user_timeline.json',
+		'type'				=>	'statuses/user_timeline',
 		'cache'				=>	1800
 	),
 
@@ -114,7 +114,7 @@ class Wp_Twitter_Api {
 			'cookies' 		=> 	array()
 		);
 		
-		$response = wp_remote_get( 'https://api.twitter.com/1.1/' . $this->query_args['type'] . '?' . $query, $args );
+		$response = wp_remote_get( 'https://api.twitter.com/1.1/' . $this->query_args['type'] . '.json?' . $query, $args );
 		
 		if ( is_wp_error( $response ) || 200 != $response['response']['code'] ){
 		
