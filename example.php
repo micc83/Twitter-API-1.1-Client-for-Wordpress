@@ -12,11 +12,11 @@ $credentials = array(
 // Let's instantiate our class with our credentials
 $twitter_api = new Wp_Twitter_Api( $credentials );
 
-// Example a - Retrieve last 5 tweets from my timeline (default type)
+// Example a - Retrieve last 5 tweets from my timeline (default type statuses/user_timeline.json)
 $query = 'count=5&include_entities=true&include_rts=true&screen_name=micc1983';
 var_dump( $twitter_api->query( $query );
 
-// Example b - Retrieve my follower with a cache of 24 hour
+// Example b - Retrieve my follower with a cache of 24 hour (default 30 minutes)
 $query = 'screen_name=micc1983';
 $args = array(
   'type' => 'users/show.json',
