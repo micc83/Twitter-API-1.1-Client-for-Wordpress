@@ -6,7 +6,7 @@ require_once( 'class-wp-twitter-api.php' );
 // Set your personal data retrieved at https://dev.twitter.com/apps
 $credentials = array(
   'consumer_key'    =>  'xxxxxxxxxxxxxxxx',
-  'consumer_secret' =>  'xxxxxxxxxxxxxxxx
+  'consumer_secret' =>  'xxxxxxxxxxxxxxxx'
 );
 
 // Let's instantiate our class with our credentials
