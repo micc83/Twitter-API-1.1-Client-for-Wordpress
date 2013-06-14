@@ -52,4 +52,4 @@ If you get the error `SSL3_GET_SERVER_CERTIFICATE:certificate verify failed` giv
 add_filter( 'https_ssl_verify', '__return_false' );
 add_filter( 'https_local_ssl_verify', '__return_false' );
 ```
-Thank you to @pdewouters to pointing it out!
+Thank you @pdewouters for pointing it out!
