@@ -44,3 +44,12 @@ For a full list of Twitter API 1.1 resources check here: https://dev.twitter.com
 ## Support and contacts
 
 If you need support you can find me on [twitter](https://twitter.com/Micc1983) or comment on the dedicated page on my [website](http://codeb.it/come-accedere-alle-nuove-api-1-1-di-twitter-con-wordpress/).
+
+## Notes
+
+If you get the error `SSL3_GET_SERVER_CERTIFICATE:certificate verify failed` give a look to the smart solution figured out by @franz-josef-kaiser [here](https://plus.google.com/107110219316412982437/posts/gTdK4MrnKUa).
+```php
+add_filter( 'https_ssl_verify', '__return_false' );
+add_filter( 'https_local_ssl_verify', '__return_false' );
+```
+Thank you to @pdewouters to pointing it out!
