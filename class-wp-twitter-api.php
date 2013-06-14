@@ -120,7 +120,7 @@ class Wp_Twitter_Api {
 		
 			if ( !$stop ){
 				$this->bearer_token = $this->get_bearer_token();
-				return $this->query( $query, $type, $transient_duration, true );
+				return $this->query( $query, $this->query_args, true );
 			} else {
 				return $this->bail( __( 'Bearer Token is good, check your query', 'wp_twitter_api' ), $response );
 			}
