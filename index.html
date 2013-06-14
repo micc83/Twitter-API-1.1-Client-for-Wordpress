@@ -72,6 +72,17 @@ That's it, check the following example, to understand how Wp_Twitter_Api works.<
 <a name="support-and-contacts" class="anchor" href="#support-and-contacts"><span class="octicon octicon-link"></span></a>Support and contacts</h2>
 
 <p>If you need support you can find me on <a href="https://twitter.com/Micc1983">twitter</a> or comment on the dedicated page on my <a href="http://codeb.it/come-accedere-alle-nuove-api-1-1-di-twitter-con-wordpress/">website</a>.</p>
+
+<h2>
+<a name="notes" class="anchor" href="#notes"><span class="octicon octicon-link"></span></a>Notes</h2>
+
+<p>If you get the error <code>SSL3_GET_SERVER_CERTIFICATE:certificate verify failed</code> give a look to the smart solution figured out by <a href="https://github.com/franz-josef-kaiser" class="user-mention">@franz-josef-kaiser</a> <a href="https://plus.google.com/107110219316412982437/posts/gTdK4MrnKUa">here</a>.</p>
+
+<div class="highlight"><pre><span class="nx">add_filter</span><span class="p">(</span> <span class="s1">'https_ssl_verify'</span><span class="p">,</span> <span class="s1">'__return_false'</span> <span class="p">);</span>
+<span class="nx">add_filter</span><span class="p">(</span> <span class="s1">'https_local_ssl_verify'</span><span class="p">,</span> <span class="s1">'__return_false'</span> <span class="p">);</span>
+</pre></div>
+
+<p>Thank you <a href="https://github.com/pdewouters" class="user-mention">@pdewouters</a> for pointing it out!</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/micc83">micc83</a></p>
