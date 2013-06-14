@@ -2,19 +2,19 @@
 /**
  * Class WordPress Twitter API
  * 
- * @since 1.0.9
  * @version 1.0.0
  */
 class Wp_Twitter_Api {
   
 	var $bearer_token,
 		
-	// Constructor default arguments
+	// Default credentials
 	$args = array(
 		'consumer_key'			=>	'default_consumer_key',
 		'consumer_secret'		=>	'default_consumer_secret'
 	),
 	
+	// Default type of the resource and cache duration
 	$query_args = array(
 		'type'				=>	'statuses/user_timeline',
 		'cache'				=>	1800
@@ -81,11 +81,10 @@ class Wp_Twitter_Api {
 	 * @uses $this->get_bearer_token() to retrieve token if not working
 	 * 
 	 * @param string $query Insert the query in the format "count=1&include_entities=true&include_rts=true&screen_name=micc1983!
-	 * @param string $type Type of the api request
-	 * @param int $transient_duration Specify how long the result should be kept in cache
+	 * @param array $query_args Array of arguments: Resource type (string) and cache duration (int)
 	 * @param bool $stop Stop the query to avoid infinite loop
 	 * 
-	 * @return bool|object Return an objecy containing the result
+	 * @return bool|object Return an object containing the result
 	 */
 	public function query( $query, $query_args = array(), $stop = false ) {
 		
