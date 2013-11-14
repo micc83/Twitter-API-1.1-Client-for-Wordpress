@@ -45,6 +45,10 @@ For a full list of Twitter API 1.1 resources check here: https://dev.twitter.com
 
 If you need support you can find me on [twitter](https://twitter.com/Micc1983) or comment on the dedicated page on my [website](http://codeb.it/come-accedere-alle-nuove-api-1-1-di-twitter-con-wordpress/).
 
+## Changelog
+
+* Fixed a bug of transients not handling correctly unicode characters, pointed out by Justin on http://codeb.it/come-accedere-alle-nuove-api-1-1-di-twitter-con-wordpress/#comment-294
+
 ## Notes
 
 If you get the error `SSL3_GET_SERVER_CERTIFICATE:certificate verify failed` give a look to the smart solution figured out by @franz-josef-kaiser [here](https://plus.google.com/107110219316412982437/posts/gTdK4MrnKUa).
