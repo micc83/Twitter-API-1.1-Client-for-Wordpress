@@ -125,10 +125,8 @@ class Wp_Twitter_Api {
 			}
 			
 		}
-		
-		$data = $response['body'];
 
-		set_transient( $transient_name, $data, $this->query_args['cache'] );
+		set_transient( $transient_name, $response['body'], $this->query_args['cache'] );
 		
 		$data = json_decode( $response['body'] );
 		
