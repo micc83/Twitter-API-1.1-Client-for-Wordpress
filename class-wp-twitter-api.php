@@ -96,7 +96,7 @@ class Wp_Twitter_Api {
 		
 		$transient_name = 'wta_' . md5( $query );
 		
-		if ( false !== ( $data = get_transient( $transient_name ) ) )
+		if ( false !== ( $data = unserialize( base64_decode( get_transient( $transient_name ) ) ) ) )
 			return $data;
 		
 		$args = array(
@@ -128,7 +128,7 @@ class Wp_Twitter_Api {
 		
 		$data = json_decode( $response['body'] );
 
-		set_transient( $transient_name, $data, $this->query_args['cache'] );
+		set_transient( $transient_name, base64_encode( serialize( $data ) ), $this->query_args['cache'] );
 		
 		return $data;
 		
