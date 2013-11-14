@@ -47,7 +47,7 @@ If you need support you can find me on [twitter](https://twitter.com/Micc1983) o
 
 ## Changelog
 
-* Fixed a bug of transients not handling correctly unicode characters, pointed out by [Justin](http://wwww.jukah.com) on http://codeb.it/come-accedere-alle-nuove-api-1-1-di-twitter-con-wordpress/#comment-294
+* Fixed a bug of transients not handling correctly unicode characters, pointed out by [Justin Hebb](http://wwww.jukah.com) on http://codeb.it/come-accedere-alle-nuove-api-1-1-di-twitter-con-wordpress/#comment-294
 
 ## Notes
 
