@@ -96,8 +96,11 @@ class Wp_Twitter_Api {
 		
 		$transient_name = 'wta_' . md5( $query );
 		
-		if ( false !== ( $data = get_transient( json_decode( $transient_name ) ) ) )
+		if ( false !== ( $data = get_transient( $transient_name ) ) ) {
+			$data = json_decode( $data );
 			return $data;
+		}
+
 		
 		$args = array(
 			'method'		=> 	'GET',
